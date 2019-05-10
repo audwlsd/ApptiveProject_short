@@ -8,12 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.audwl.myapplication.databinding.ActivityMainBinding;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+import com.example.audwl.myapplication.databinding.*;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;

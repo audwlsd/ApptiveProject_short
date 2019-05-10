@@ -8,18 +8,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import static com.example.audwl.myapplication.MainActivity.getGlobalValue;
-import static com.example.audwl.myapplication.MainActivity.setGlobalValue;
-
 import com.example.audwl.myapplication.databinding.*;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class sub2Activity extends AppCompatActivity {
-    ActivitySub2Binding binding;
-    @BindView(R.id.text2)
+import static com.example.audwl.myapplication.MainActivity.getGlobalValue;
+import static com.example.audwl.myapplication.MainActivity.setGlobalValue;
+
+public class sub3Activity extends AppCompatActivity {
+    ActivitySub3Binding binding;
+    @BindView(R.id.text3)
     TextView textView;
 
     @BindView(R.id.answer1)
@@ -33,7 +33,7 @@ public class sub2Activity extends AppCompatActivity {
 
     @BindView(R.id.answer4)
     Button answer4;
-    private String[] question = {"사랑문제1", "우정문제1", "게임문제1"};
+    private String[] question = {"사랑문제2", "우정문제2", "게임문제2"};
     private String[] love_answer = {"사랑1번", "사랑2번", "사랑3번", "사랑4번"};
     private String[] friend_answer = {"우정1번", "우정2번", "우정3번", "우정4번"};
     private String[] game_answer = {"게임1번", "게임2번", "게임3번", "게임4번"};
@@ -41,67 +41,67 @@ public class sub2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_sub2);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_sub3);
         ButterKnife.bind(this);
 
-        switch (getGlobalValue()) {
-            case (100):
-                binding.text2.setText(question[getGlobalValue()/100 - 1]);
+        switch (getGlobalValue()/100) {
+            case (1):
+                binding.text3.setText(question[getGlobalValue()/100 - 1]);
                 binding.answer1.setText(love_answer[0]);
                 binding.answer2.setText(love_answer[1]);
                 binding.answer3.setText(love_answer[2]);
                 binding.answer4.setText(love_answer[3]);
                 break;
-            case (200):
-                binding.text2.setText(question[getGlobalValue() / 100 - 1]);
+            case (2):
+                binding.text3.setText(question[getGlobalValue() / 100 - 1]);
                 binding.answer1.setText(friend_answer[0]);
                 binding.answer2.setText(friend_answer[1]);
                 binding.answer3.setText(friend_answer[2]);
                 binding.answer4.setText(friend_answer[3]);
                 break;
-            case (300):
-                binding.text2.setText(question[getGlobalValue() / 100 - 1]);
+            case (3):
+                binding.text3.setText(question[getGlobalValue() / 100 - 1]);
                 binding.answer1.setText(game_answer[0]);
                 binding.answer2.setText(game_answer[1]);
                 binding.answer3.setText(game_answer[2]);
                 binding.answer4.setText(game_answer[3]);
                 break;
-             default:
-                 break;
+            default:
+                break;
         }
     }
 
     @OnClick(R.id.answer1)
     void selectAnswer1Button(View view) {
-        setGlobalValue(getGlobalValue()+10);
-        Intent intent = new Intent(this, sub3Activity.class);
+        setGlobalValue(getGlobalValue()+1);
+        Intent intent = new Intent(this, sub4Activity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_in_left);
     }
 
     @OnClick(R.id.answer2)
     void selectAnswer2Button(View view) {
-        setGlobalValue(getGlobalValue()+20);
+        setGlobalValue(getGlobalValue()+2);
 
-        Intent intent = new Intent(this, sub3Activity.class);
+        Intent intent = new Intent(this, sub4Activity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_in_left);
     }
 
     @OnClick(R.id.answer3)
     void selectAnswer3Button(View view) {
-        setGlobalValue(getGlobalValue()+30);
+        setGlobalValue(getGlobalValue()+3);
 
-        Intent intent = new Intent(this, sub3Activity.class);
+        Intent intent = new Intent(this, sub4Activity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_in_left);
     }
 
     @OnClick(R.id.answer4)
     void selectAnswer4Button(View view) {
-        setGlobalValue(getGlobalValue()+40);
+        setGlobalValue(getGlobalValue()+4);
 
-        Intent intent = new Intent(this, sub3Activity.class);
+        Intent intent = new Intent(this, sub4Activity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_in_left);
     }
