@@ -2,21 +2,21 @@ package com.example.audwl.myapplication;
 
 public class NickName {
     public static String[] array_111 ={"사랑꾼","사랑돌이"};
-    public static String[] array_112 ={"daf"};
-    public static String[] array_113 ={"daf"};
-    public static String[] array_114 ={"daf"};
-    public static String[] array_121 ={"daf"};
-    public static String[] array_122 ={"daf"};
-    public static String[] array_123 ={"daf"};
-    public static String[] array_124 ={"daf"};
-    public static String[] array_131 ={"daf"};
-    public static String[] array_132 ={"daf"};
-    public static String[] array_133 ={"daf"};
-    public static String[] array_134 ={"daf"};
-    public static String[] array_141 ={"daf"};
-    public static String[] array_142 ={"daf"};
-    public static String[] array_143 ={"daf"};
-    public static String[] array_144 ={"daf"};
+    public static String[] array_112 ={"사랑바보","사랑밖에난몰라"};
+        public static String[] array_113 ={"단소니","단미"};
+        public static String[] array_114 ={"사랑꾼","사랑돌이"};
+    public static String[] array_121 ={"사랑바보","사랑밖에난몰라"};
+    public static String[] array_122 ={"단소니","단미"};
+    public static String[] array_123 ={"사랑꾼","사랑돌이"};
+    public static String[] array_124 ={"사랑바보","사랑밖에난몰라"};
+    public static String[] array_131 ={"단소니","단미"};
+    public static String[] array_132 ={"사랑꾼","사랑돌이"};
+    public static String[] array_133 ={"사랑바보","사랑밖에난몰라"};
+    public static String[] array_134 ={"단소니","단미"};
+    public static String[] array_141 ={"사랑꾼","사랑돌이"};
+    public static String[] array_142 ={"사랑바보","사랑밖에난몰라"};
+    public static String[] array_143 ={"단소니","단미"};
+    public static String[] array_144 ={"단소니","단미"};
 
 
     public static String[] array_211 ={"daf"};
