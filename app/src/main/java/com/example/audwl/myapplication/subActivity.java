@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.audwl.myapplication.databinding.*;
@@ -22,9 +23,6 @@ import static com.example.audwl.myapplication.MainActivity.setGlobalValue;
 public class subActivity extends AppCompatActivity {
     ActivitySubBinding binding;
 
-    @BindView(R.id.text2)
-    TextView textView;
-
     @BindView(R.id.button_next)
     Button button_next;
 
@@ -32,7 +30,7 @@ public class subActivity extends AppCompatActivity {
     Button button_love;
 
     @BindView(R.id.button_friend)
-    Button button_friend;
+    ImageButton button_friend;
 
     @BindView(R.id.button_game)
     Button button_game;

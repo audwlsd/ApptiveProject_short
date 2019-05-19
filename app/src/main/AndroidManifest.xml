@@ -19,7 +19,10 @@
         <activity android:name=".subActivity" />
         <activity android:name=".sub2Activity" />
         <activity android:name=".sub3Activity" />
-        <activity android:name=".sub4Activity"></activity>
+        <activity android:name=".sub4Activity" />
+        <activity
+            android:name=".LoadingActivity"
+            android:label="@string/title_activity_loading"></activity>
     </application>
 
 </manifest>

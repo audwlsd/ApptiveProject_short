@@ -74,7 +74,7 @@ public class sub3Activity extends AppCompatActivity {
     @OnClick(R.id.answer1)
     void selectAnswer1Button(View view) {
         setGlobalValue(getGlobalValue()+1);
-        Intent intent = new Intent(this, sub4Activity.class);
+        Intent intent = new Intent(this, LoadingActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_in_left);
     }
@@ -83,7 +83,7 @@ public class sub3Activity extends AppCompatActivity {
     void selectAnswer2Button(View view) {
         setGlobalValue(getGlobalValue()+2);
 
-        Intent intent = new Intent(this, sub4Activity.class);
+        Intent intent = new Intent(this, LoadingActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_in_left);
     }
@@ -92,7 +92,7 @@ public class sub3Activity extends AppCompatActivity {
     void selectAnswer3Button(View view) {
         setGlobalValue(getGlobalValue()+3);
 
-        Intent intent = new Intent(this, sub4Activity.class);
+        Intent intent = new Intent(this, LoadingActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_in_left);
     }
@@ -101,7 +101,7 @@ public class sub3Activity extends AppCompatActivity {
     void selectAnswer4Button(View view) {
         setGlobalValue(getGlobalValue()+4);
 
-        Intent intent = new Intent(this, sub4Activity.class);
+        Intent intent = new Intent(this, LoadingActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_in_left);
     }

@@ -18,8 +18,6 @@ import com.example.audwl.myapplication.databinding.*;
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
 
-    @BindView(R.id.textview)
-    TextView textView;
 
     @BindView(R.id.button1)
     Button button1;
