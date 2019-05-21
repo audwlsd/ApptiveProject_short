@@ -5,7 +5,9 @@ import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @BindView(R.id.button1)
-    Button button1;
+    ImageButton button1;
 
     static int gValue;
 
@@ -38,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         MainActivity.setGlobalValue(0);
-        binding.button1.setText("시작하기...");
         ButterKnife.bind(this);
     }
 

@@ -33,8 +33,8 @@ public class sub2Activity extends AppCompatActivity {
 
     @BindView(R.id.answer4)
     Button answer4;
-    private String[] question = {"사랑문제1", "우정문제1", "게임문제1"};
-    private String[] love_answer = {"사랑1번", "사랑2번", "사랑3번", "사랑4번"};
+    private String[] question = {"운동문제1", "우정문제1", "게임문제1"};
+    private String[] exercise_answer = {"운동1번", "운동2번", "운동3번", "운동4번"};
     private String[] friend_answer = {"우정1번", "우정2번", "우정3번", "우정4번"};
     private String[] game_answer = {"게임1번", "게임2번", "게임3번", "게임4번"};
 
@@ -47,10 +47,10 @@ public class sub2Activity extends AppCompatActivity {
         switch (getGlobalValue()) {
             case (100):
                 binding.text2.setText(question[getGlobalValue()/100 - 1]);
-                binding.answer1.setText(love_answer[0]);
-                binding.answer2.setText(love_answer[1]);
-                binding.answer3.setText(love_answer[2]);
-                binding.answer4.setText(love_answer[3]);
+                binding.answer1.setText(exercise_answer[0]);
+                binding.answer2.setText(exercise_answer[1]);
+                binding.answer3.setText(exercise_answer[2]);
+                binding.answer4.setText(exercise_answer[3]);
                 break;
             case (200):
                 binding.text2.setText(question[getGlobalValue() / 100 - 1]);

@@ -24,16 +24,16 @@ public class subActivity extends AppCompatActivity {
     ActivitySubBinding binding;
 
     @BindView(R.id.button_next)
-    Button button_next;
+    ImageButton button_next;
 
-    @BindView(R.id.button_love)
-    Button button_love;
+    @BindView(R.id.button_exercise)
+    ImageButton button_exercise;
 
     @BindView(R.id.button_friend)
     ImageButton button_friend;
 
     @BindView(R.id.button_game)
-    Button button_game;
+    ImageButton button_game;
 
 
     @Override
@@ -44,7 +44,7 @@ public class subActivity extends AppCompatActivity {
     }
 
     // love -> global value is 100
-    @OnClick(R.id.button_love)
+    @OnClick(R.id.button_exercise)
     void selectLoveButton(View view) {
         //global variable test
         setGlobalValue(100);

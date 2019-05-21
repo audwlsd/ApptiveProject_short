@@ -6,19 +6,61 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".sub4Activity"
-        android:orientation="vertical">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="200px"
-            android:id="@+id/main_img"
-            android:src="@drawable/main_img"/>
-        <TextView
-            android:id="@+id/text4"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            tools:context=".sub4Activity"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150px"
+                android:layout_margin="10dp"
+                android:id="@+id/main_img"
+                android:src="@drawable/main_img"/>
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@drawable/a4"
+                android:layout_centerInParent="true"
+                />
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sub4Activity"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#FFD0"/>
+
+        </RelativeLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="sub4Activity"
-            android:textSize="50dp"/>
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            >
 
+            <ImageButton
+                android:id="@+id/button_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/restart"
+                android:layout_marginRight="30dp"
+                />
+            <ImageButton
+                android:id="@+id/button_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/like"
+                />
+
+
+        </LinearLayout>
     </LinearLayout>
+
 </layout>

@@ -12,21 +12,23 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".MainActivity">
+
         <ImageView
+            android:id="@+id/main_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/main_img"
-            android:src="@drawable/main_img"/>
-        <Button
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/first_page" />
+
+        <ImageButton
             android:id="@+id/button1"
-            style="@android:style/Widget.Material.Button.Colored"
-            android:layout_width="100dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_gravity="right"
-            android:text="시작하기"
-        />
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="113dp"
+            android:background="@drawable/start_btn" />
 
     </RelativeLayout>
 </layout>

@@ -1,8 +1,11 @@
 package com.example.audwl.myapplication;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.audwl.myapplication.databinding.*;
@@ -11,8 +14,10 @@ import java.util.Random;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 import static com.example.audwl.myapplication.MainActivity.getGlobalValue;
+import static com.example.audwl.myapplication.MainActivity.setGlobalValue;
 import static com.example.audwl.myapplication.NickName.*;
 
 public class sub4Activity extends AppCompatActivity {
@@ -20,6 +25,9 @@ public class sub4Activity extends AppCompatActivity {
 
     @BindView(R.id.text4)
     TextView textView;
+
+    @BindView(R.id.button_restart)
+    ImageButton button_restart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,5 +186,12 @@ public class sub4Activity extends AppCompatActivity {
                 binding.text4.setText(array_344[random_number]);
                 break;
         }
+    }
+
+    @OnClick(R.id.button_restart)
+    void selectRestartButton(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.anim_slide_in_right, R.anim.anim_slide_in_left);
     }
 }

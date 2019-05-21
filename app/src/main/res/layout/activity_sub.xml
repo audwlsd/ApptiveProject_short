@@ -6,12 +6,13 @@
     <LinearLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/background">
 
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="500dp"
+            android:layout_height="480dp"
             android:orientation="vertical"
             android:weightSum="4"
             >
@@ -22,51 +23,51 @@
                 android:src="@drawable/select_category"
                 android:layout_weight="1" />
 
-            <Button
-                android:id="@+id/button_love"
+            <ImageButton
+                android:id="@+id/button_exercise"
                 style="@android:style/Widget.Material.Button.Colored"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
-                android:text="사랑"
-                 />
+                android:background="@drawable/exercise_btn"
+                />
 
             <ImageButton
                 android:id="@+id/button_friend"
-                style="@android:style/Widget.Material.Button.Colored"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:text="우정"
-                android:src="@drawable/game_txt"
+                android:background="@drawable/friend_btn"
                  />
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_game"
-                style="@android:style/Widget.Material.Button.Colored"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:text="게임"
-                 />
+                android:background="@drawable/game_btn"
+
+                />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
             android:orientation="vertical">
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_next"
-                style="@android:style/Widget.Material.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="다음 화면"
-                android:gravity="right"
-                android:layout_gravity="right"/>
+                android:layout_width="104px"
+                android:layout_height="120px"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/arrow_btn" />
         </LinearLayout>
 
     </LinearLayout>
